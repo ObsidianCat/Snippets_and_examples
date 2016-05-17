@@ -1,0 +1,223 @@
+@import 'reset';
+@import 'colors_theme';
+
+@mixin circle-border($border-color) {
+  border: 1px solid $border-color;
+  border-radius: 50%;
+}
+
+/* Base Styles START */
+.green{
+  background-color: $color-ready-green
+}
+ul{
+  list-style: none;
+  display: flex;
+}
+body{
+  background-color: $color-main-background;
+}
+div.content-box{
+  padding-bottom: 7rem;
+  height: 100%;
+
+}
+
+header{
+  width: 100%;
+  background-color:$color-dust-rose;
+  padding: 0rem 1rem 0.5rem 1rem;
+  *{
+    color: $color-clear-white;
+  }
+  ul{
+    align-items: center;
+    height: 3rem;
+
+    li h1{
+      margin-left: 0.5rem;
+      font-size: 1rem;
+      font-weight: 400;
+    }
+  }
+}
+article#room-lock{
+  font-size: 1rem;
+  position: relative;
+  color:$color-dark-grey;
+  margin: 1rem 3% 1rem 3%;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  background-color: $color-bright-grey;
+  i.btn-close{
+    position: absolute;
+    top: 0.5rem;
+    right: 0.5rem;
+  }
+  span.check-circle{
+    @include circle-border($color-ready-green);
+    background-color: $color-ready-green;
+    width: 1rem;
+    height: 1rem;
+    display: inline-block;
+    margin-right: 0.5rem;
+  }
+  section{
+    border-bottom: 1px solid $color-medium-grey;
+    width: 100%;
+    padding: 1rem 0.5rem;
+
+  }
+  section.top-info{
+    text-align: center;
+    h2{
+      color: $color-medium-grey;
+      font-size: 3em;
+      margin: 0rem;
+    }
+  }
+  section.action-icons{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 0rem;
+
+    div {
+      padding: 1rem 0.5rem;
+      text-align: center;
+      i{
+        @include circle-border($color-dark-grey);
+        width: 7rem;
+        padding: 1rem;
+      }
+    }
+    div.active{
+      i{
+        @include circle-border($color-clear-white);
+        background-color: $color-dust-rose;
+        color:$color-clear-white
+      }
+      p{
+        color:$color-dust-rose
+      }
+    }
+  }
+  section.message{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    i{
+      @include circle-border($color-medium-blue);
+      color:$color-clear-white;
+      background-color: $color-medium-blue;
+      padding: 0.2rem 1.1rem;
+    }
+    p{
+      font-size: 0.9em;
+      font-size: 0.9em;
+      margin: 0.5em 1em;
+    }
+  }
+  section.bottom-info{
+    border-bottom: 0px;
+    ul{
+      align-items: center;
+      justify-content: center;
+      flex-wrap: wrap;
+
+      li{
+        margin: 0rem 0.2rem;
+      }
+      li.number-code{
+        margin: 0rem 0.4rem;
+        font-size: 1em;
+        font-weight: 700;
+      }
+    }
+    i{
+      @include circle-border($color-medium-grey);
+      padding: 0.5rem;
+      color: $color-medium-grey;
+    }
+  }
+}
+footer{
+  padding: 0rem 1rem 0rem 1rem;
+  background-color: $color-bright-grey;
+  background-color: #F3F3F3;
+  position: fixed;
+  position: absolute;
+  width: 100%;
+  bottom: 0px;
+  height: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+
+  i{
+    margin: 0rem 0.5rem 0rem 0.5rem;
+  }
+  #arrows i{
+    color: $color-medium-grey;
+
+  }
+  nav{
+    margin-left: auto;
+
+    ul{
+      align-items: center;
+    }
+    i{
+      color: $color-medium-blue;
+    }
+  }
+}
+/* Base Styles END */
+
+
+
+/* Media Queries START */
+@media only screen and (min-width : 320px) {
+  article#room-lock{
+    section.action-icons{
+      div{
+        width: 50%;
+      }
+      div.active{
+        border-right: 1px solid $color-medium-grey;
+      }
+    }
+  }
+}/*min-width : 320px END*/
+
+@media only screen and (min-width : 460px) {
+  article#room-lock{
+    font-size: 1.1rem;
+    section.bottom-info{
+      ul li{
+        margin: 0rem 0.4rem;
+      }
+      ul li.number-code{
+        margin: 0rem 1rem;
+        font-size: 2em;
+      }
+    }
+  }
+}/*min-width : 460px END*/
+
+@media only screen and (min-width : 768px) {
+  article#room-lock{
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}/*min-width : 768px END*/
+
+@media only screen and (min-width : 1020px) {
+  article#room-lock{
+    width: 40%;
+  }
+}/*min-width : 768px END*/
+/* Media Queries END */
+

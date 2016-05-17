@@ -1,0 +1,184 @@
+html,
+body {
+  width: 100%;
+  font-family: 'Roboto', sans-serif; }
+
+html {
+  font-size: 16px;
+  position: relative;
+  min-height: 100%; }
+
+body * {
+  box-sizing: border-box; }
+
+html,
+body,
+ul {
+  margin: 0rem;
+  padding: 0rem; }
+
+/* Base Styles START */
+.green {
+  background-color: #46C746; }
+
+ul {
+  list-style: none;
+  display: flex; }
+
+body {
+  background-color: #ACB7CA; }
+
+div.content-box {
+  padding-bottom: 7rem;
+  height: 100%; }
+
+header {
+  width: 100%;
+  background-color: #CE5E82;
+  padding: 0rem 1rem 0.5rem 1rem; }
+  header * {
+    color: white; }
+  header ul {
+    align-items: center;
+    height: 3rem; }
+    header ul li h1 {
+      margin-left: 0.5rem;
+      font-size: 1rem;
+      font-weight: 400; }
+
+article#room-lock {
+  font-size: 1rem;
+  position: relative;
+  color: #545454;
+  margin: 1rem 3% 1rem 3%;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  background-color: #ECECEC; }
+  article#room-lock i.btn-close {
+    position: absolute;
+    top: 0.5rem;
+    right: 0.5rem; }
+  article#room-lock span.check-circle {
+    border: 1px solid #46C746;
+    border-radius: 50%;
+    background-color: #46C746;
+    width: 1rem;
+    height: 1rem;
+    display: inline-block;
+    margin-right: 0.5rem; }
+  article#room-lock section {
+    border-bottom: 1px solid #8A8A8A;
+    width: 100%;
+    padding: 1rem 0.5rem; }
+  article#room-lock section.top-info {
+    text-align: center; }
+    article#room-lock section.top-info h2 {
+      color: #8A8A8A;
+      font-size: 3em;
+      margin: 0rem; }
+  article#room-lock section.action-icons {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 0rem; }
+    article#room-lock section.action-icons div {
+      padding: 1rem 0.5rem;
+      text-align: center; }
+      article#room-lock section.action-icons div i {
+        border: 1px solid #545454;
+        border-radius: 50%;
+        width: 7rem;
+        padding: 1rem; }
+    article#room-lock section.action-icons div.active i {
+      border: 1px solid white;
+      border-radius: 50%;
+      background-color: #CE5E82;
+      color: white; }
+    article#room-lock section.action-icons div.active p {
+      color: #CE5E82; }
+  article#room-lock section.message {
+    display: flex;
+    align-items: center;
+    justify-content: space-around; }
+    article#room-lock section.message i {
+      border: 1px solid #367FDC;
+      border-radius: 50%;
+      color: white;
+      background-color: #367FDC;
+      padding: 0.2rem 1.1rem; }
+    article#room-lock section.message p {
+      font-size: 0.9em;
+      font-size: 0.9em;
+      margin: 0.5em 1em; }
+  article#room-lock section.bottom-info {
+    border-bottom: 0px; }
+    article#room-lock section.bottom-info ul {
+      align-items: center;
+      justify-content: center;
+      flex-wrap: wrap; }
+      article#room-lock section.bottom-info ul li {
+        margin: 0rem 0.2rem; }
+      article#room-lock section.bottom-info ul li.number-code {
+        margin: 0rem 0.4rem;
+        font-size: 1em;
+        font-weight: 700; }
+    article#room-lock section.bottom-info i {
+      border: 1px solid #8A8A8A;
+      border-radius: 50%;
+      padding: 0.5rem;
+      color: #8A8A8A; }
+
+footer {
+  padding: 0rem 1rem 0rem 1rem;
+  background-color: #ECECEC;
+  background-color: #F3F3F3;
+  position: fixed;
+  position: absolute;
+  width: 100%;
+  bottom: 0px;
+  height: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start; }
+  footer i {
+    margin: 0rem 0.5rem 0rem 0.5rem; }
+  footer #arrows i {
+    color: #8A8A8A; }
+  footer nav {
+    margin-left: auto; }
+    footer nav ul {
+      align-items: center; }
+    footer nav i {
+      color: #367FDC; }
+
+/* Base Styles END */
+/* Media Queries START */
+@media only screen and (min-width: 320px) {
+  article#room-lock section.action-icons div {
+    width: 50%; }
+  article#room-lock section.action-icons div.active {
+    border-right: 1px solid #8A8A8A; } }
+/*min-width : 320px END*/
+@media only screen and (min-width: 460px) {
+  article#room-lock {
+    font-size: 1.1rem; }
+    article#room-lock section.bottom-info ul li {
+      margin: 0rem 0.4rem; }
+    article#room-lock section.bottom-info ul li.number-code {
+      margin: 0rem 1rem;
+      font-size: 2em; } }
+/*min-width : 460px END*/
+@media only screen and (min-width: 768px) {
+  article#room-lock {
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto; } }
+/*min-width : 768px END*/
+@media only screen and (min-width: 1020px) {
+  article#room-lock {
+    width: 40%; } }
+/*min-width : 768px END*/
+/* Media Queries END */
+
+/*# sourceMappingURL=main.css.map */
