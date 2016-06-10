@@ -1,0 +1,18 @@
+<section class="bg-info navigation">
+    <ul class="sorting">
+        <li class="title">
+            Sort by year
+        </li>
+        <li class="descending" ng-click="filterByYear(true)"> < </li>
+        <li class="ascending" ng-click="filterByYear(false)"> < </li>
+    </ul>
+    <div class="search">
+        <input placeholder="Search movie by name" type="text" ng-model="search"/>
+    </div>
+</section>
+
+
+<div id="movies-list">
+    <list-item  class="list-item" ng-repeat="movie in moviesList"></list-item>
+
+</div>

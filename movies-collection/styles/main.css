@@ -1,0 +1,47 @@
+.list-item, #movie-details{
+    display: flex;
+    margin: 1rem;
+    align-items: flex-start;
+}
+header{
+    margin: 1rem;
+}
+.list-item img{
+    width: 15%;
+    height: auto;
+}
+.list-item aside,
+#movie-details section{
+    margin-left: 1rem;
+}
+section.navigation {
+    display: flex;
+    margin: 1rem;
+    padding: 1rem;
+}
+section.navigation ul{
+    list-style: none;
+}
+
+section.navigation div.search{
+    margin-left: 3rem;
+}
+
+ul.sorting{
+    padding: 0px;
+    margin: 0px;
+}
+div.search{
+    margin: 0px;
+}
+ul.sorting li{
+    display: inline-block;
+    font-size: 2rem;
+    font-weight: 500;
+}
+ul.sorting li.descending{
+    transform: rotate(270deg);
+}
+ul.sorting li.ascending{
+    transform: rotate(90deg);
+}
